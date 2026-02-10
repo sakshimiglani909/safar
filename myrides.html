@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Rides - RidePartner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Ride<span>Partner</span></h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findride.html">Find Ride</a></li>
+            <li><a href="postride.html">Post Ride</a></li>
+            <li><a href="myrides.html">My Rides</a></li>
+             <li><a href="ride-details.html">Ride-Details</a></li>
+            <li><a href="help-support.html">Help</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="dashboard-header">
+        <h2>My <span>Rides</span></h2>
+        <p>Manage your journeys and history here.</p>
+    </div>
+
+    <section class="dashboard-section">
+        <div class="section-title">
+            <h3>🚗 Rides You Posted</h3>
+            <a href="postride.html" class="btn-small">+ Post New</a>
+        </div>
+        
+        <div id="myPostedRides" class="rides-grid">
+            <div class="empty-state">
+                <div class="empty-icon">📍</div>
+                <p>No rides posted yet. Start sharing and saving!</p>
+                <a href="postride.html" class="text-link">Create your first ride post</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-section">
+        <div class="section-title">
+            <h3>🎟️ Rides You Booked</h3>
+        </div>
+        <div class="empty-state">
+            <div class="empty-icon">🔍</div>
+            <p>No bookings yet. Looking for a trip?</p>
+            <a href="findride.html" class="text-link">Find a ride now</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 RidePartner | Travel Smart • Save Money • Go Together</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

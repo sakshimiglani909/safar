@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - RidePartner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient"> <header>
+    <nav class="navbar">
+        <h2 class="logo">Ride<span>Partner</span></h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findride.html">Find Ride</a></li>
+            <li><a href="postride.html">Post Ride</a></li>
+            <li><a href="myrides.html">My Rides</a></li>
+             <li><a href="ride-details.html">Ride-Details</a></li>
+            <li><a href="help-support.html">Help</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="login">Already have an account? Login</a>
+        </div>
+    </nav>
+</header>
+
+<main class="signup-container">
+    <div class="signup-card">
+        <div class="signup-header">
+            <h2>Create <span>Account</span></h2>
+            <p>Join our community of smart travelers</p>
+        </div>
+
+<form id="signupForm"> <div class="form-grid">
+        <div class="input-field">
+            <label>Full Name</label>
+            <input type="text" id="userName" placeholder="e.g. Jayant Manchanda" required>
+        </div>
+
+        <div class="input-field">
+            <label>Phone Number</label>
+            <input type="tel" id="userPhone" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+
+        <div class="input-field full-width">
+            <label>Email Address</label>
+            <input type="email" id="userEmail" placeholder="email@example.com" required>
+        </div>
+
+        <div class="input-field full-width">
+            <label>Password</label>
+            <input type="password" id="userPass" placeholder="Create a strong password" required>
+        </div>
+
+        <div class="input-field">
+            <label>Gender</label>
+            <select id="userGender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Prefer not to say</option>
+            </select>
+        </div>
+
+        <div class="input-field">
+            <label>Are you a student?</label>
+            <select id="isStudent">
+                <option value="yes">Yes, I am a Student</option>
+                <option value="no">No, I am Working/Other</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="terms">
+        <label><input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a></label>
+    </div>
+
+    <button type="submit" class="btn-signup">Join RidePartner</button>
+</form>
+        
+        <script src="script.js"></script>
+
+        <div class="signup-footer">
+            <p>Already a member? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 RidePartner | Travel Smart • Save Money • Go Together</p>
+</footer>
+
+</body>
+</html>

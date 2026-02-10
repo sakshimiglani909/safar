@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Ride - RidePartner MP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Ride<span>Partner</span></h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findride.html">Find Ride</a></li>
+            <li><a href="postride.html">Post Ride</a></li>
+            <li><a href="myrides.html">My Rides</a></li>
+             <li><a href="ride-details.html">Ride-Details</a></li>
+            <li><a href="help-support.html">Help</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Signup</a>
+        </div>
+    </nav>
+</header>
+
+<div class="mp-info-bar">
+    📍 Searching in <strong>Madhya Pradesh</strong> Network
+</div>
+
+<main class="container">
+    <section class="search-section">
+        <h2>Find Your Next <span>MP Journey</span></h2>
+        <p style="margin-bottom: 20px; color: #666;">Indore, Bhopal, Gwalior aur Jabalpur ke liye best rides yahan hain.</p>
+        
+        <div class="search-bar">
+            <div class="input-group">
+                <label>From (MP City)</label>
+                <input type="text" id="searchFrom" placeholder="e.g. Bhopal">
+            </div>
+            <div class="input-group">
+                <label>To (MP City)</label>
+                <input type="text" id="searchTo" placeholder="e.g. Indore">
+            </div>
+            <div class="input-group">
+                <label>Date</label>
+                <input type="date" id="searchDate">
+            </div>
+           <button class="btn-search" id="searchBtn">Search MP Rides</button>
+
+<div style="text-align: center; margin-top: 10px;">
+    <a href="#" onclick="resetData()" style="color: #e74c3c; font-size: 0.8rem; text-decoration: none;">
+        🗑️ Clear Old Test Data (Reset)
+    </a>
+</div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="ride-results">
+        <div class="results-header">
+            <h3>Available Rides in MP</h3>
+            <span class="trust-badge">Verified Local Drivers Only</span>
+        </div>
+
+        <div class="rides-grid" id="ridesDisplay">
+            <p>Rides load ho rahi hain...</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 RidePartner | Travel Smart • MP's Favorite Carpooling • Go Together</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

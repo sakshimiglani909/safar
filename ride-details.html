@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Details - RidePartner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Ride<span>Partner</span></h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findride.html">Find Ride</a></li>
+            <li><a href="postride.html">Post Ride</a></li>
+            <li><a href="myrides.html">My Rides</a></li>
+             <li><a href="ride-details.html">Ride-Details</a></li>
+            <li><a href="help-support.html">Help</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Signup</a>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <div class="ride-detail-wrapper">
+        <div class="detail-card">
+            <div class="route-header">
+                <div class="city">
+                    <h3 id="detFrom">Bhopal</h3> <p>Pickup</p>
+                </div>
+                <div class="route-arrow"> → </div>
+                <div class="city">
+                    <h3 id="detTo">Delhi</h3> <p>Drop</p>
+                </div>
+                <div class="price-tag" id="detPrice">₹1200</div> </div>
+            <hr class="card-divider">
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">Driver</span>
+                    <span class="value" id="detDriver">👤 Rohit Manchanda</span> </div>
+                <div class="info-item">
+                    <span class="label">Date & Time</span> <span class="value" id="detDateTime">Feb 15, 10:00 AM</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Seats Left</span>
+                    <span class="value" id="detSeats">💺 3 Seats Available</span> </div>
+                <div class="info-item">
+                    <span class="label">Phone</span>
+                    <span class="value" id="detPhone">📞 +91 XXXXX XXXXX</span> </div>
+            </div>
+            
+            <div class="safety-note">
+                <p>⚠️ Only verified students or professionals can request this ride.</p>
+            </div>
+
+            <div class="action-buttons">
+                <a id="callBtn" href="#" class="btn-contact" style="text-decoration: none; text-align: center;">📞 Call Driver</a>
+                <button class="btn-request" onclick="alert('Request sent to driver!')">Request to Join</button>
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="findride.html">← Back to Search Results</a>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>s
+             
+
+<footer>
+    <p>© 2026 RidePartner | Travel Smart • Save Money • Go Together</p>
+</footer>
+
+</body>
+</html>
